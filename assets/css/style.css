@@ -129,6 +129,7 @@ nav {
     background-color: peru;
     height: 95vh;
     width: 50vw;
+    box-shadow: -2px 3px 2px rgb(0, 0, 0, 0.2);
 
     position: fixed;
     left: 100%; /* Sai da tela para a direita */
@@ -136,7 +137,7 @@ nav {
     display: flex;
     justify-content: center;
     opacity: 0;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
 }
 
 .slide-menu.active {
@@ -149,6 +150,17 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.sidelink {
+    transform: translateX(500px);
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+.sidelink.active {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /* DIMENSÃO DA TELA RESPONSIVA */

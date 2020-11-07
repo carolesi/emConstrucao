@@ -6,6 +6,13 @@ function showDropdown () {
 
 function showSlide () {
     var slide = document.getElementById('slide-menu')
+    var slideitem = document.querySelectorAll('.sidelink')
 
     slide.classList.toggle('active')
+
+    slideitem.forEach(element => {
+        element.classList.toggle('active')
+    });    
+    
 }
+
