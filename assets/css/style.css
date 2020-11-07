@@ -152,6 +152,7 @@ nav {
     align-items: center;
 }
 
+/* LINKS DENTRO DO SLIDE MENU */
 .sidelink {
     transform: translateX(500px);
     opacity: 0;
