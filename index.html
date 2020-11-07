@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Slide Menu</title>
+</head>
+<body>
+    <nav>
+        <!-- NavBar -->
+        <div class="logo">LOGO</div>
+
+        <!-- NavLinks -->
+        <ul class="nav-links">
+            <li class="link"><a href="#">Início</a></li>
+
+            <!-- Dropdown Menu -->
+            <div class="projetos">
+                <li class="link"><a href="#" onclick="showDropdown()">Projetos</a></li>
+                <ul id="dropdown-menu" class="dropdown-menu">
+                    <li><a href="#">Cuida!</a></li>
+                    <li><a href="#">GAM</a></li>
+                    <li><a href="#">Oficinas</a></li>
+                </ul>
+            </div>
+
+            <li class="link"><a href="#">Sobre</a></li>
+            <li class="link"><a href="#">Contato</a></li>
+        </ul>
+
+        <!-- Hamburguer -->
+        <div class="hamburger" onclick="showSlide()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- Slide Menu -->
+    <div id="slide-menu" class="slide-menu">
+        <ul class="slide-menu-links">
+            <li class="sidelink"><a href="#">Início</a></li>
+            <li class="sidelink"><a href="#">Projetos</a></li>
+            <li class="sidelink"><a href="#">Sobre</a></li>
+            <li class="sidelink"><a href="#">Contato</a></li>
+        </ul>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
